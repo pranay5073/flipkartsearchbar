@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  max-width: 100vw;
+  height: 500vh;
+  background-color: white;
+  overflow-y: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+.main {
+  background-color: rgb(241, 242, 244);
+  height: 500%;
+}
+
+.sticky-head-container {
+  display: flex;
+  text-align: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* border: 1px solid; */
+  width: 100%;
+  max-width: 1000px;
+  /* position:relative; */
+}
+
+.sticky-head {
+  width: 100%;
+  /* border: 1px solid; */
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+
+.search-logo {
+  display: flex;
+  width: 73%;
+  min-width: 170px;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+.flipkart-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipkart-logo-main {
+  margin-right: 30px;
+  margin-left: 5px;
+  /* border:1px solid; */
+}
+
+.search-bar {
+  width: 100%;
+  min-width: 100px;
+  height: 40px;
+  /* margin: 10px 0px; */
+  border-radius: 10px;
+  background-color: #f1f5ff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* border:1px solid red; */
+}
+
+.bi-search {
+  margin: 10px;
+  color: grey;
+  font-size: large;
+}
+
+.main-search-bar {
+  border: none;
+  width: 100%;
+  min-width: 50px;
+  height: 100%;
+  background-color: rgb(241, 245, 255);
+  font-size: 17.5px;
+  border-radius: 8px;
+  word-spacing: 1px;
+
+  /* border:1px solid red; */
+}
+
+a:focus, a:hover {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.main-search-bar:focus {
+  outline: none;
+}
+
+.icons-div {
+  width: 270px;
+  min-width: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  /* border: 1px solid red; */
+}
+
+.utility {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+  width: 270px;
+}
+
+.icon-1 {
+  /* margin-left: 20px; */
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid; */
+  font-weight: bolder;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.icons1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 120px;
+  height: 100%;
+  /* border: 1px solid red; */
+  margin-left: 5px;
+}
+#login-button1 {
+  background-color: none;
+  /* border: 1px solid green; */
+  /* padding: 3px; */
+  font-size: medium;
+}
+
+.login-button {
+  /* color: red; */
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.bi-person-circle {
+  /* font-size: large; */
+  margin-right: 5px;
+  font-weight: bold;
+  /* border:1px solid; */
+  height: 100%;
+}
+
+.bi-caret-down-fill {
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  font-size: small;
+  /* border:1px solid; */
+  height: 100%;
+}
+
+.dropdown-login {
+  position: absolute;
+  border: none;
+  top: 55px;
+  width: 270px;
+  /* padding: 5px; */
+  background-color: white;
+  display: none;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.134));
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.icons2 {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  /* transform:translateX(-1px); */
+  /* border: 1px solid; */
+}
+
+.icons3 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateX(-px); */
+  /* border:1px solid; */
+}
+
+.icons4 {
+  width: 40px;
+  transform: translateX(-px);
+  /* border: 1px solid; */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.icon-4 {
+  /* border: 2px solid green; */
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.icon-4-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  width: 220px;
+  display: none;
+}
+
+.icon-4:hover .icon-4-dropdown {
+  background-color: rgba(5, 6, 6, 0);
+  border: 1px solid transparent;
+  display: block;
+  /* border: width 0em; */
+}
+.icon-4:hover {
+  background-color: #1e212714;
+}
+
+.icon-2 .bi-cart-3 {
+  font-weight: bolder;
+  -webkit-text-stroke: 10px;
+}
+
+li {
+  display: flex;
+  height: 20px;
+  /* padding: 10px; */
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ddicons {
+  height: 35px;
+  /* border:1px solid; */
+  width: 100%;
+}
+
+.dddicons {
+  margin: 0px 13px;
+  /* border:1px solid; */
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dd-login {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+
+.ddlogin-signup {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(233, 224, 224, 0.874);
+  /* border:1px solid red; */
+}
+#Dropdown-signup {
+  color: #3056d5;
+}
+.ddlogin-s-new {
+  width: 65%;
+  /* border:1px solid ; */
+  height: 100%;
+  display: flex;
+  /* justify-content:center; */
+  align-items: center;
+  padding: 3px;
+}
+.ddlogin-s-up {
+  color: #3056d5;
+  height: 100%;
+  width: 35%;
+  display: flex;
+  /* border:1px solid; */
+  font-weight: bold;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ddlogin-list {
+  display: flex;
+  flex-direction: column;
+  /* width:100%; */
+  font-size: 14px;
+  /* height:210px; */
+  /* padding:2px; */
+  /* border:1px solid; */
+}
+.icons1:hover .dropdown-login {
+  display: block;
+}
+
+.icon-1:hover {
+  background-color: #3056d5;
+}
+
+.loginlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons1:hover .login-button {
+  filter: brightness(0) invert(1);
+}
+
+.icon-1:hover .bi-caret-down-fill {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.ddicons:hover {
+  background-color: #f1f5ffa6;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.icon4dd {
+  display: flex;
+  flex-direction: column;
+  /* border:1px solid ; */
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+  /* padding:10px; */
+  font-size: 15px;
+  filter: drop-shadow(5px 5px 20px rgba(215, 203, 203, 0.762));
+}
+
+.icons4dd {
+  padding: 20px 0px;
+  width: 100%;
+  /* border:1px solid; */
+}
+
+.icons4dd:hover {
+  background-color: #20283a0c;
+}
+
+.iconss4 {
+  margin-right: 10px;
+  margin-left: 15px;
+  /* border:1px solid; */
+}
+
+.small-menubar {
+  display: none;
+}
+
+.download-btn {
+  width: 40px;
+  height: 100%;
+  display: none;
+}
+
+.small-searchbar {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .sticky-head {
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .search-bar {
+    display: none;
+    /* border:1px solid; */
+  }
+
+  .small-menubar {
+    display: inline-block;
+    /* border:1px solid; */
+    margin-left: 14px;
+  }
+
+  .icon-4 {
+    display: none;
+    width: 0px;
+  }
+
+  .icons3 {
+    display: none;
+    width: 0px;
+  }
+
+  .bi-caret-down-fill {
+    display: none;
+    width: 0px;
+  }
+
+  .icons2 {
+    transform: translateX(-15px);
+  }
+
+  .flipkart-logo-main {
+    transform: translateX(-40px);
+  }
+
+  .download-btn {
+    display: flex;
+    transform: translateX(15px);
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid; */
+  }
+  .downloadbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 10px; */
+    /* border:1px solid; */
+  }
+
+  .small-searchbar {
+    display: block;
+    margin: 5px auto;
+    margin: min(5px 10px);
+    height: 40px;
+    font-size: small;
+    background-color: #f1f5ff;
+    border-radius: 8px;
+    width: 90%;
+    /* border:1px solid; */
+  }
+
+  .sticky-head-container {
+    max-width: 480px;
+    /* border: 1px solid; */
+    /* display:flex; */
+    /* justify-content:flex-end; */
+  }
+
+  .smallsearchbartext {
+    font-size: small;
+  }
+
+  .search-bar-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .small-search-icon{
+    /* width:20px; */
+    min-width:0px;
+    /* margin:10px; */
+    /* margin:min(0px,10px); */
+  }
+
+  .icons1:hover .login-button {
+    /* background-color:none; */
+    filter: brightness(1) invert(0);
+  }
+
+  .icon-1:hover {
+    background-color: white;
+    /* filter:brightness(0) invert(1); */
+  }
+
+  .icons1 {
+    /* margin-left: 10px; */
+    margin-right: 10px;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    padding: 0px;
+  }
+
+  .icon-1{
+    display:flex;
+    /* border:1px solid ; */
+    padding:0px;
+  }
+
+  .loginbuttonlink::selection{
+    background-color:none;
+    
+  }
+
+  .icons1:hover .dropdown-login {
+    display: none;
+  }
+
+  #login-button1 {
+    /* transform:translateX(-6px); */
+    /* border: 1px solid; */
+    height: 100%;
+    width: 100%;
+  }
+  .bi-person-circle {
+    /* font-size: large; */
+    margin-right: 2px;
+    font-weight: bold;
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .login-button {
+    /* display:flex; */
+    /* justify-content:space-around; */
+    width: 100%;
+    /* border: 3px solid; */
+    height: 100%;
+  }
+
+  .loginlay-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(144, 17, 17); */
+    width: 80px;
+  }
+
+  .icons-div {
+    /* width: 270px; */
+    min-width: 0px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    /* margin-left:min(10px); */
+    /* margin-left:60px; */
+    /* justify-content: flex-end; */
+    /* border: 1px solid red; */
+  }
+
+  .utility {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: 3px solid; */
+    width: 270px;
+  }
+
+  .bi-person-circle {
+    /* font-size: large; */
+    /* margin-right: 5px; */
+    /* font-weight: bold; */
+    /* border:1px solid; */
+    height: 25px;
+    padding:0px;
+    margin:0px;
+    width:25px;
+  }
+}

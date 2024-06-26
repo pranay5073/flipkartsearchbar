@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sticky-head">
+        <div class="sticky-head-container">
+          <div class="search-logo">
+            <div class="small-menubar">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNSIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI1IDI0IiBmaWxsPSJub25lIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzExNzg3Xzg3NzY3KSI+CjxwYXRoIGQ9Ik00LjUgMTJIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDYuMjVIMjAuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNC41IDE3Ljc1SDIwLjUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF8xMTc4N184Nzc2NyI+CjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuNSkiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K"
+              />
+            </div>
+            <div class="flipkart-logo">
+              <a href="https://www.flipkart.com/">
+                <img
+                  class="flipkart-logo-main"
+                  src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+              /></a>
+            </div>
+            <div class="search-bar">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                class="main-search-bar"
+                placeholder="Search for Products, Brands and More"
+                name="search"
+              />
+            </div>
+          </div>
+          <div class="icons-div">
+            <div class="utility">
+              <div class="iconssmall-download">
+                <div class="download-btn">
+                  <img
+                    class="downloadbutton"
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIj4KICA8ZyBjbGlwLXBhdGg9InVybCgjY2xpcDBfMTE1NzBfODc5OTgpIj4KICAgIDxwYXRoIGQ9Ik0xOCAyMC4yNVYzLjc1QzE4IDIuOTIxNTcgMTcuMzI4NCAyLjI1IDE2LjUgMi4yNUw3LjUgMi4yNUM2LjY3MTU3IDIuMjUgNiAyLjkyMTU3IDYgMy43NUw2IDIwLjI1QzYgMjEuMDc4NCA2LjY3MTU3IDIxLjc1IDcuNSAyMS43NUgxNi41QzE3LjMyODQgMjEuNzUgMTggMjEuMDc4NCAxOCAyMC4yNVoiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik0xMiAxMC4xMDU1TDEyIDE3LjYwNTUiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMS40IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICAgIDxwYXRoIGQ9Ik05Ljc1IDE1LjM1NTVMMTIgMTcuNjA1NUwxNC4yNSAxNS4zNTU1IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjEuNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgICA8cGF0aCBkPSJNMTAuNSA0LjVIMTMuNSIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwvZz4KICA8ZGVmcz4KICAgIDxjbGlwUGF0aCBpZD0iY2xpcDBfMTE1NzBfODc5OTgiPgogICAgICA8cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IndoaXRlIi8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KPC9zdmc+Cg=="
+                  />
+                </div>
+              </div>
+
+              <div class="icons1">
+                <div class="icon-1">
+                  <a class="loginbuttonlink" href="https://www.flipkart.com/account/login?ret=/">
+                    <div class="login-button">
+                      <div class="loginlay loginlay-2">
+                        <img
+                          class="bi-person-circle loginlay"
+                          src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/profile-52e0dc.svg"
+                        />
+                        <span id="login-button1">Login</span>
+                        <img
+                          class="bi-caret-down-fill loginlay"
+                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"
+                        />
+                      </div></div
+                  ></a>
+                  <div class="dropdown-login">
+                    <div class="dd-login">
+                      <div class="ddlogin-signup">
+                        <div class="ddlogin-s-new">
+                          <li>
+                            <p>New Customer?</p>
+                          </li>
+                        </div>
+                        <div class="ddlogin-s-up">
+                          <li>
+                            <a
+                              href="https://www.flipkart.com/account/login?signup=true&ret=/"
+                              id="Dropdown-signup"
+                              >Sign Up</a
+                            >
+                          </li>
+                        </div>
+                      </div>
+                      <div class="ddlogin-list">
+                        <a
+                          href="https://www.flipkart.com/account/?rd=0&link=home_account"
+                          ><li class="ddicons">
+                            <i class="bi bi-person-circle dddicons"></i>
+                            <p>My Profile</p>
+                          </li></a
+                        >
+                        <a href="https://www.flipkart.com/plus"
+                          ><li class="ddicons">
+                            <i class="bi bi-caret-right-fill dddicons"></i>
+                            <p>Flipkart Plus Zone</p>
+                          </li></a
+                        >
+                        <a
+                          href="https://www.flipkart.com/account/orders?link=home_orders"
+                        >
+                          <li class="ddicons">
+                            <i class="bi bi-box-seam dddicons"></i>
+                            <p>Orders</p>
+                          </li></a
+                        >
+                        <a
+                          href="https://www.flipkart.com/wishlist?link=home_wishlist"
+                          ><li class="ddicons">
+                            <i class="bi bi-heart-fill dddicons"></i>
+                            <p>Wishlist</p>
+                          </li></a
+                        >
+                        <a
+                          href="https://www.flipkart.com/account/rewards?link=home_rewards"
+                          ><li class="ddicons">
+                            <i class="bi bi-trophy-fill dddicons"></i>
+                            <p>Rewards</p>
+                          </li></a
+                        >
+                        <a
+                          href="https://www.flipkart.com/the-gift-card-store?link=home_giftcard"
+                          ><li class="ddicons">
+                            <i class="bi bi-gift-fill dddicons"></i>
+                            <p>Giftcards</p>
+                          </li></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="icons2">
+                <div class="icon-2">
+                  <a
+                    href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"
+                  >
+                    <abbr title="Cart">
+                      <img
+                        class="bi bi-cart3"
+                        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg" /></abbr
+                  ></a>
+                </div>
+              </div>
+
+              <div class="icons3">
+                <div class="icon-3">
+                  <a
+                    href="https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect"
+                  >
+                    <abbr title="Become a Seller">
+                      <img
+                        class="bi bi-shop-window"
+                        src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg" /></abbr
+                  ></a>
+                </div>
+              </div>
+
+              <div class="icons4">
+                <div class="icon-4">
+                  <i class="bi bi-three-dots-vertical"></i>
+                  <div class="icon-4-dropdown">
+                    <div class="icon4dd">
+                      <a
+                        href="https://www.flipkart.com/communication-preferences/push?t=all"
+                        ><li class="icons4dd">
+                          <i class="bi bi-bell-fill iconss4"></i>
+                          <p>Notification Preferences</p>
+                        </li></a
+                      >
+
+                      <a href="https://www.flipkart.com/helpcentre">
+                        <li class="icons4dd">
+                          <i class="bi bi-headset iconss4"></i>
+                          <p>24*7 Customer Care</p>
+                        </li></a
+                      >
+                      <a
+                        href="https://advertising.flipkart.com/?otracker=ch_vn_advertise_header"
+                        ><li class="icons4dd">
+                          <i
+                            class="bi bi-arrow-up-right-circle-fill iconss4"
+                          ></i>
+                          <p>Advertise</p>
+                        </li></a
+                      >
+                      <a
+                        href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"
+                        ><li class="icons4dd">
+                          <i class="bi bi-download iconss4"></i>
+                          <p>Download App</p>
+                        </li></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="small-searchbar">
+          <div class="searchbarsmall">
+            <div class="search-bar-small">
+              <i class="bi bi-search small-search-icon"></i>
+              <input
+                type="search"
+                class="main-search-bar smallsearchbartext"
+                placeholder="Search for Products, Brands and More"
+                name="search"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="choice-section"></div>
+      <div class="product-banner"></div>
+      <div class="deals-on-smartphones"></div>
+      <div class="emi-offer-h-scroll"></div>
+      <div class="deals-on-fashion"></div>
+      <div class="product-offer"></div>
+    </div>
+  </body>
+</html>
